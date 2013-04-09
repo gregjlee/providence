@@ -1,0 +1,30 @@
+<div id="student_list">
+  <h1>Listing students</h1>
+  <table>
+    <% @students.each do |student| %>
+      <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+        <td>
+          <%= image_tag(student.image_url, class: 'list_image') %>
+        </td>
+        <td class="list_description">
+          <dl>
+            <dt><%= student.name %></dt>
+            <dd>id_num: <%= student.id_num %></dd>
+            <dd>weight: <%= student.weight %></dd>
+          </dl>
+        </td>
+        <td class="list_actions">
+          <%= link_to 'Show', student %><br/>
+          <%= link_to 'Edit', edit_student_path(student) %><br/>
+          <%= link_to 'Destroy', student, confirm: 'Are you sure?', method: :delete %>
+        </td>
+      </tr>
+      <% end %>
+  </table>
+
+
+</div>
+
+<br />
+
+<%= link_to 'New Student', new_student_path %>

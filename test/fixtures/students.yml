@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  id_num: 1
+  weight: 1
+  image_url: MyString
+
+two:
+  name: MyString
+  id_num: 1
+  weight: 1
+  image_url: MyString
