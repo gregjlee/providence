@@ -6,7 +6,7 @@ class StudentsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @students }
+      format.json { render json: { students: @students } }
     end
   end
 
@@ -29,6 +29,13 @@ class StudentsController < ApplicationController
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @student }
+    end
+  end
+
+  def search
+    respond_to do |format|
+      format.html { redirect_to students_url }
+      format.json { head :no_content }
     end
   end
 

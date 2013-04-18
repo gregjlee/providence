@@ -64,6 +64,13 @@
   background:   #f8b0f8;
 }
 
+/* profile page */
+
+#student_profile .profile_image{
+  width: 160px;
+  height: 180px;
+}
+
 /* An entry in the store catalog */
 
 #store  .entry {

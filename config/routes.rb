@@ -1,4 +1,5 @@
 Providence::Application.routes.draw do
+# Default mapping of routes for the scaffold
   resources :students
 
 
