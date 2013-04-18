@@ -2,6 +2,7 @@ Providence::Application.routes.draw do
 # Default mapping of routes for the scaffold
   resources :students
 
+get "/students"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
