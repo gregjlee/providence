@@ -10,23 +10,23 @@ Student.delete_all
 Student.create(name: 'los feliz',
 	id_num: 13434,
 	weight: 450,
-	image_url: 'bathroom.jpg'
+	image_url: 'http://gregleeapps.com/providence/images/bathroom.jpg'
 	)
 
 Student.create(name: 'machete',
 	id_num: 34523,
 	weight: 220,
-	image_url: 'cabo.jpg'
+	image_url: 'http://gregleeapps.com/providence/images/cabo.jpg'
 	)
 
 Student.create(name: 'lawlence',
 	id_num: 3346,
 	weight: 180,
-	image_url: 'karina.jpg'
+	image_url: 'http://gregleeapps.com/providence/images/karina.jpg'
 	)
 
 Student.create(name: 'ten rens',
 	id_num: 8976,
 	weight: 90,
-	image_url: 'tea.jpg'
+	image_url: 'http://gregleeapps.com/providence/images/tea.jpg'
 	)
